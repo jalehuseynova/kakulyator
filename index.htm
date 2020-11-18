@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Caculator</title>
+    <link rel="stylesheet" href="fonts.css">
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+<div class="hesablama">
+    <div class="header">
+        <input type="text" placeholder="0,00" class="hesab">
+        <input type="text" placeholder="0,00" class="netice">
+
+    </div>
+    <div class="main">
+        <button onclick="input(`%`)" class="btn">%</button>
+        <button onclick="input(-)" class="btn">+/-</button>
+        <button onclick="reset()" class="btn">C</button>
+        <button onclick="input(`/`)" class="btn_indigo">/</button>
+        <button onclick="input(`7`)" class="btn">7</button>
+        <button onclick="input(`8`)" class="btn">8</button>
+        <button onclick="input(`9`)" class="btn">9</button>
+        <button onclick="input(`*`)" class="btn_indigo">x</button>
+        <button onclick="input(`4`)" class="btn">4</button>
+        <button onclick="input(`5`)" class="btn">5</button>
+        <button onclick="input(`6`)" class="btn">6</button>
+        <button onclick="input(`-`)" class="btn_indigo">-</button>
+        <button onclick="input(`1`)" class="btn">1</button>
+        <button onclick="input(`2`)" class="btn">2</button>
+        <button onclick="input(`3`)" class="btn">3</button>
+        <button onclick="input(`+`)" class="btn_indigo">+</button>
+        <button onclick="input(`0`)" class="btn">0</button>
+        <button onclick="input(`,`)" class="btn">,</button>
+        <button onclick="result()" class="btn_equal">=</button>
+      
+    </div>
+</div>
+    
+</body>
+
+<script>
+ const inputCalc = document.querySelector(".hesab"),
+        resultCalc = document.querySelector(".netice");
+
+
+
+
+    function input(i) {
+    inputCalc.value = inputCalc.value + i
+    }
+
+    function result() {
+      if (eval(inputCalc.value) == undefined) {
+      resultCalc.value = "0,00";
+      inputCalc.value = "0,00";
+    }
+      if (eval(inputCalc.value) == Infinity) {
+    resultCalc.value = "0,00";
+    inputCalc.value = "Sıfıra bölməyə icazə verilmir";
+     }
+    resultCalc.value = eval(inputCalc.value);
+    inputCalc.value = eval(inputCalc.value);
+    }
+    function reset(){
+    resultCalc.value = "";
+    inputCalc.value = "0,00";
+    }
+
+    
+  </script>
+</html>

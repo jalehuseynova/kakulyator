@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: linear-gradient(-60deg, #ff9768 0%, #9156e1 100%);
+    font-family: "Lato" , sans-serif;
+
+}
+
+.hesablama{
+    margin: 90px auto;
+    width: 368px;
+    height: 600px;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.75);
+}
+.header{
+    height: 100px;
+    padding-top: 38px;
+    padding-bottom: 27px;
+    padding-left: 29px;
+    padding-right: 29px;
+    background-color: #212121;
+    border-top-left-radius: 5px ;
+    border-top-right-radius: 5px ;
+    text-align: right;
+
+}
+
+.hesab{
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    color: #d98192;
+    text-align: right;
+}
+.hesab::placeholder{
+    color: #d98192;
+}
+
+.netice{
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 50px;
+    color: #fff;
+    text-align: right;
+    margin-top: 16px;
+}
+.netice::placeholder{
+    color: #fff;
+}
+
+.main{
+    height: 500px;
+    display: table;
+}
+
+.btn{
+    width: 92px;
+    height: 92px;
+    padding: 39px;
+    border: none;
+    outline: none;
+    font-size: 22px;
+    color: #212122;
+    background-image: linear-gradient(to right, #f7f7ff 0%, #f1f1f1 100%);
+    cursor: pointer;
+    cursor: pointer;
+}
+.btn:nth-child(17){
+    border-bottom-left-radius: 5px;
+
+}
+
+.btn_equal{
+    position: absolute;
+    width: 185px;
+    height: 92px;
+    padding: 39px ;
+    font-size: 22px;
+    background-color: #e62f89;
+    border: none;
+    outline: none;
+    color: #fff;
+    border-bottom-right-radius: 5px;
+    cursor: pointer;
+}
+
+.btn_indigo{
+    width: 92px;
+    height: 92px;
+    padding: 39px;
+    border: none;
+    outline: none;
+    font-size: 22px;
+    background-image: none;
+    background-color: #8547d9;
+    color: #fff;
+    cursor: pointer;
+
+}
+.btn:hover, .btn_indigo:hover, .btn_equal:hover{
+    filter: brightness(85%);
+    -webkit-filter: brightness(85%);
+}
